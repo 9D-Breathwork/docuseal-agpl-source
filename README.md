@@ -1,3 +1,5 @@
 # DocuSeal AGPL-3.0 Corresponding Source
 
 The DocuSeal instance operated by 9D Breathwork runs the stock, unmodified `docuseal/docuseal:3.2.1` image (digest `sha256:32433e4cb80ded38ac4125760c452009bd14a433cf0776767ea6ce48f8c3afb1`, built from upstream commit [`docusealco/docuseal@004a22c1`](https://github.com/docusealco/docuseal/tree/004a22c1c88109c7ba0b567df011a8cb13894001)), plus the two Ruby files in this repository, bind-mounted read-only at `/app/app/controllers/api/templates_pdf_controller.rb` and `/app/config/initializers/zz_templates_pdf_route.rb`, which add the `POST /api/templates/pdf` endpoint. Those two files are the entire modification, are byte-identical to what runs, and are published under the GNU Affero General Public License v3 ([`LICENSE`](LICENSE)) together with upstream's §7(b) attribution terms ([`LICENSE_ADDITIONAL_TERMS`](LICENSE_ADDITIONAL_TERMS)); the source of DocuSeal itself is available from its authors at the commit above.
+
+Upstream archive: DocuSeal 3.2.1, commit 004a22c1c88109c7ba0b567df011a8cb13894001, is attached to release [v3.2.1-9d.2](https://github.com/9D-Breathwork/docuseal-agpl-source/releases/tag/v3.2.1-9d.2).
